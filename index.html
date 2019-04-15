@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Sekiro Checklist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Checklists for Sekiro, including Achievements, Prayer Beads, Gourd Seeds and Bosses.">
+  <meta name="author" content="Justin Tam">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/jstorage.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>var profilesKey = 'bloodborne_profiles';</script>
+  <script src="js/main.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66576837-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <h1>Sekiro 100% Checklist</h1>
+        <ul class="nav nav-tabs">
+          <!-- <li class="active"><a href="#tabPlaythrough" data-toggle="tab">Playthrough</a></li> -->
+          <li><a href="#tabChecklists" data-toggle="tab">Checklists</a></li>
+          <!-- <li><a href="#tabInformation" data-toggle="tab">Information</a></li>
+          <li><a href="#tabHelp" data-toggle="tab">Help</a></li> -->
+        </ul>
+        <div class="profile" style="float: right;">
+          <div class="input-append">
+            <select id="profiles">
+            </select>
+            <button class="btn" type="button" id="profileAdd">Add</button>
+            <button class="btn" type="button" id="profileEdit">Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="intro">
+      <p>
+        checklist for 100%ing sekiro
+      </p>
+    </div>
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="tabPlaythrough">
+        <h2>Playthrough Checklist <span id="playthrough_overall_total"></span></h2>
+        <ul>
+          <li><a href="#Ashina_Reservoir">Ashina Reservoir</a><span id="playthrough_nav_totals_1"></span></li>
+          <li><a href="#Dilapidated_Temple">Dilapidated Temple</a> <span id="playthrough_nav_totals_2"></span></li>
+          <li><a href="#Ashina_Outskirts">Ashina Outskirts</a><span id="playthrough_nav_totals_3"></span></li>
+          <li><a href="#Hirata_Estate">Hirata Estate</a><span id="playthrough_nav_totals_4"></span></li>
+          <li><a href="#Ashina_OutskirtsTwo">Ashina Outskirts 2</a><span id="playthrough_nav_totals_5"></span></li>
+          <li><a href="#Hirata_EstateTwo">Hirata Estate 2</a><span id="playthrough_nav_totals_6"></span></li>
+          <li><a href="#Ashina_Castle">Ashina Castle</a><span id="playthrough_nav_totals_7"></span></li>
+        </ul>
+        <hr />
+
+        <h3 id="Ashina_Reservoir"><a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Ashina+Reservoir">Ashina Reservoir</a> <span id="playthrough_totals_1"></span></h3>
+        <ul>
+          <li data-id="playthrough_1_1">Get to the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Moon-view+Tower" target="">Moon-view Tower</a></li>
+          <li data-id="playthrough_1_2">Acquire  <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Kusabimaru" target="">Kusabimaru</a> and <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Healing+Gourd" target="">Healing Gourd</a></li>
+          <li data-id="playthrough_1_3">Face  <a href="https://www.youtube.com/watch?v=_Cgsfg2tBh8" target="">Genichiro Ashina</a></li>
+        </ul>
+
+        <h3 id="Dilapidated_Temple"><a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dilapidated+Temple">Dilapidated Temple</a> <span id="playthrough_totals_2"></span></h3>
+        <ul>
+          <li data-id="playthrough_2_1">Talk to the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Sculptor" target=""></a></li>
+          <li data-id="playthrough_2_2">Talk to <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Emma" target="">Emma</a></li>
+        </ul>
+
+        <!-- <h3 id="End_Game">End Game - <a href="http://bloodborne.wiki.fextralife.com/Hunter%27s+Dream">Hunter's Dream</a> <span id="playthrough_totals_27"></span></h3>
+        <ul>
+          <li data-id="playthrough_27_1">Complete <a href="http://bloodborne.wiki.fextralife.com/Arianna">Arianna</a>'s quest line to receive <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a></li>
+          <li data-id="playthrough_27_2">Complete <a href="http://bloodborne.wiki.fextralife.com/Iosefka">Iosefka</a>'s quest line to receive <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a></li>
+          <li data-id="playthrough_27_3">There are <a href="http://bloodborne.wiki.fextralife.com/Endings">three endings</a> and how you proceed will decide which ending you get. NOTE: Once you trigger the end game boss(es) you can not continue in the open world so finish everything you want to before triggering the end.
+            <ul>
+              <li data-id="playthrough_27_4">Ending one - Consume no more than 2 <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a> and then talk to <a href="http://bloodborne.wiki.fextralife.com/Gehrman">Gehrman</a>. Let him kill you, no final boss</li>
+              <li data-id="playthrough_27_5">Ending two - Consume no more than 2 <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a> and then talk to <a href="http://bloodborne.wiki.fextralife.com/Gehrman">Gehrman</a>. Fight him as final boss</li>
+              <li data-id="playthrough_27_6">Ending three - Collect and consume 3 or more <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a> and then talk to <a href="http://bloodborne.wiki.fextralife.com/Gehrman">Gehrman</a>. Fight him as the penultimate boss before the <a href="http://bloodborne.wiki.fextralife.com/Moon+Presence">Moon Presence</a> - the true final boss</li>
+            </ul>
+          </li>
+        </ul> -->
+      </div>
+      <div class="tab-pane" id="tabChecklists">
+        <h2>Checklists <span id="checklist_overall_total"></span></h2>
+        <ul>
+          <li><a href="#Prayer_Beads">Peak Physical Strength</a> (Acquire all Prayer Beads) <span id="checklist_nav_totals_1"></span></li>
+          <li><a href="#Gourd_Seeds">Ultimate Healing Gourd</a> (Acquire all Gourd Seeds) <span id="checklist_nav_totals_2"></span></li>
+        </ul>
+
+        <hr />
+
+        <h3 id="Prayer_Beads">Peak Physical Strength (Acquire all <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Prayer+Beads">Prayer Beads</a>) <span id="checklist_totals_1"></span></h3>
+        <h4>Ashina Outskirts</h4>
+        <ul>
+          <li data-id="checklist_1_1">Dropped by <a href="https://www.youtube.com/watch?v=M2Q_8g6RPng" target="">General Naomori Kawarada</a> - "Outskirts Wall - Gate Path"</li>
+          <li data-id="checklist_1_2">Dropped by <a href="https://www.youtube.com/watch?v=pKGsdEjTABE" target="">Chained Ogre</a> - "Outskirts Wall - Stairway"</li>
+          <li data-id="checklist_1_3">Dropped by <a href="https://www.youtube.com/watch?v=TjHuRSMRErs" target="">Tenzen Yamauchi</a> - "Outskirts Wall - Stairway"</li>
+          <li data-id="checklist_1_4"><a href="https://youtu.be/kc71u1xcwIk" target="">In a chest in the attic of the temple</a> where you speak with the Tengu of Ashina for the 1st time. You must grapple up the rafters and then wall jump into the attic. You must first defeat Gyoubu Oniwa before you can access this area.</li>
+          <li data-id="checklist_1_5">Dropped by the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Blazing+Bull" target="">Blazing Bull</a> - "Ashina Castle Gate"</li>
+        </ul>
+        <h4>Hirata Estate</h4>
+        <ul>
+          <li data-id="checklist_1_6">Dropped by <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Shinobi+Hunter+Enshin+of+Misen" target="">Shinobi Hunter Enshin of Misen</a> - "Bamboo Thicket Slope"</li>
+          <li data-id="checklist_1_7">Dropped by <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Juzou+the+Drunkard" target="">Juzou the Drunkard</a> - "Main Hall Courtyard"</li>
+          <li data-id="checklist_1_8"><a href="https://youtu.be/4kFIDBfquHM" target="">1x in a chest behind the hidden wall</a> near the Hirata Audience Chamber Sculptor's Idol. The hidden wall is denoted by a wall scroll at the end of the pathway being patrolled by the Bandit Soldier & Bandit Archer</li>
+        </ul>
+        <h4>Ashina Castle</h4>
+        <ul>
+          <li data-id="checklist_1_9">Dropped by <a href="" target="">General Kuranosuke Matsumoto</a> upon defeat at the top of the stairway leading to Ashina Castle</li>
+          <li data-id="checklist_1_10">Dropped by <a href="" target="">Lone Shadow Longswordsman</a></li> upon defeat in the Ashina Reservoir Well
+          <li data-id="checklist_1_11">Dropped by <a href="" target="">Seven Ashina Spears - Shikibu Toshikatsu Yamauchi</a> upon defeat in the Ashina Reservoir</li>
+          <li data-id="checklist_1_12"><a href="https://youtu.be/6qIiksAZUBc" target="">In a chest behind a hidden wall</a> in the Upper Tower - Antechamber. The hidden wall is located between the two sets of armor behind the two Blue-Robed Samurai sitting in a room on the right</li>
+          <li data-id="checklist_1_13">Dropped by <a href="" target="">Ashina Elite - Jinusuke Saze</a> upon defeat in the Ashina Dojo</li>
+        </ul>
+        <h4>Abandoned Dungeon</h4>
+        <ul>
+          <li data-id="checklist_1_14">Sold by <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Dungeon+Memorial+Mob" target="">Dungeon Memorial Mob</a> for 1400 sen</li>
+        </ul>
+        <h4>Senpou Temple, Mt. Kongo</h4>
+        <ul>
+          <li data-id="checklist_1_15">Dropped by the <a href="" target="">Armored Warrior</a> upon defeat atop the mountain past the Shugendo Sculptor's idol</li>
+          <li data-id="checklist_1_16">Dropped by <a href="" target="">Long Arm Centipede Sen-Un</a> upon defeat in the Temple Grounds</li>
+          <li data-id="checklist_1_17"><a href="https://youtu.be/9s3W3ZJnYUc" target="">From the Temple Grounds Sculptor's Idol</a> jump into the pond containing two Treasure Carps and dive. This can only be obtained after acquiring the Mibu Breathing Technique Latent Skill</li>
+        </ul>
+        <h4>Sunken Valley</h4>
+        <ul>
+          <li data-id="checklist_1_18"><a href="https://youtu.be/mBFPSwEtPKc" target="">From the Under-Shrine Valley Sculptor's idol,</a> turn around and walk up the hill slightly. Grappling across to tree stump. Kill the two Riflemen. Double-jump and climb up the wall next to them. Hug the wall and shimmy around the ledge. On the other side, drop down to find the prayer bead in the snow</li>
+          <li data-id="checklist_1_19">Dropped by <a href="" target="">Snake Eyes Shirafuji</a> upon defeat near the Sunken Valley Idol</li>
+          <li data-id="checklist_1_20">Dropped by <a href="" target="">Long-arm Centipede Giraffe</a> upon defeat in the Gun Fort</li>
+          <li data-id="checklist_1_21"><a href="https://youtu.be/G4rEveIUlxA" target="">After defeating Long-Arm Centipede Giraffe,</a> there is a hole in the floor to the left of the statue. Crouch and follow the left path to the chasm. Follow the two grapple hooks to the right to the first platform. Look up and to the right for the next grapple point to the next platform. Walk across the platform then look down and to the left for the final grapple point. This item will be on the ground in the center the mini-centipedes and poison geckos</li>
+        </ul>
+        <h4>Ashina Depths</h4>
+        <ul>
+          <li data-id="checklist_1_22">Dropped by <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Snake+Eyes+Shirahagi" target="">Snake Eyes Shirahagi</a> upon defeat in the Poison Pools</li>
+          <li data-id="checklist_1_23"><a href="https://youtu.be/Y20LgGMXNJ0" target="">Past the fog gate guarded by Snake Eyes Shirahagi,</a> just before the drop into the Ape's Den, look up and to the left. There will be a grapple point. Follow the path until the spot where you have to crouch. Go past the first overhang, stand up, turn left, and jump up on the ledge. Follow the path and climb the wall using consecutive wall jumps. Look up towards the statues head and grapple. The item will be on top of the statue's head</li>
+          <li data-id="checklist_1_24">Dropped by <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Tokujiro+the+Glutton" target="">Tokujiro the Glutton</a> upon defeat in the Misty Forrest</li>
+          <li data-id="checklist_1_25">Dropped by the <a href="" target="">Headless Ape</a> upon defeat in the Ashina Depths. You must first defeat the Guardian Ape in the Sunken Valley Passage before you can fight this boss</li>
+          <li data-id="checklist_1_26">(Second Prayer Bead dropped by the Ape)<a href="" target=""></a></li>
+          <li data-id="checklist_1_27">Dropped by <a href="" target="">O'Rin of the Water</a> upon defeat in Mibu Village</li>
+          <li data-id="checklist_1_28"><a href="https://youtu.be/rWPZ0eYlIMc" target="">From the Water Mill Sculptor's Idol</a> go through O'rin of the Water's arena, over the bridge, and up to the house. There is an opening to the right-side of the house's stairs you can crouch under. Go to the left side of the house, look up and interact with the revolving floorboards. Go outside the house and grapple to the 2nd Floor. This item is on the Shrine surrounded by Spirit Emblems</li>
+          <li data-id="checklist_1_29"><a href="https://youtu.be/0VJkPB-mCQE" target="">In a chest at the bottom of the Lake in Mibu Village.</a> This can only be obtained after receiving the Mibu Breathing Technique Latent Skill</li>
+        </ul>
+        <h3><em>** Collect all the above Prayer Beads before defeating the Divine Dragon **</em></h3>
+        <h4>Ashina Castle (after overrun)</h4>
+        <ul>
+          <li data-id="checklist_1_30">Dropped by <a href="" target="">Lone Shadow Masanaga the Spear-Bearer</a> upon defeat at the Great Serpent Shrine. Only before Ashina has been set ablaze</li>
+          <li data-id="checklist_1_31">Dropped by <a href="" target="">Lone Shadow Vilehand</a> upon defeat in the Ashina Dojo</li>
+          <li data-id="checklist_1_32">Dropped by the <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Chained+Ogre" target="">Chained Ogre</a> upon defeat in the bottom of the Upper Tower. Jump down from the Upper Tower - Antechamber Sculptor's Idol area where two Samurai and an Old Lady are walking</li>
+        </ul>
+        <h4>Hirata Estate (Second memory, Purification Ending)</h4>
+        <ul>
+          <li data-id="checklist_1_33">From Lone Shadow Masanaga the Spear-Bearer where you found dying Owl in the 1st Memory</li>
+          <li data-id="checklist_1_34">From Juzou the Drunkard rematch</li>
+        </ul>
+        <h4>Fountainhead Palace</h4>
+        <ul>
+          <li data-id="checklist_1_35">Dropped by <a href="" target="">Sakura Bull of the Palace</a> upon defeat. Once you make it to the Sculptor's Idol past the courtyard full of flute-playing Nobles, turn left and run down the length of the palace. The Sakura Bull will appear from around the corner once you are about 1/2 way down the length of the palace. Note: If you land a stealth deathblow, you will still have to fight the bull as it does not kill it</li>
+          <li data-id="checklist_1_36">Located at the bottom of the <a href="" target="">Great Colored Carp</a> Lake. There is a pit in the lake with 2 headless and a giant skeleton with glowing worms on it. The prayer bead is located around the skeleton. You do not have to kill headless to retrieve</li>
+          <li data-id="checklist_1_37">Dropped by <a href="" target="">Okami Leader Shizu</a> upon defeat at the Sakura Tree. This is the enemy that shoots lightning at you when you attempt to enter the Lake when first reaching Fountainhead Palace</li>
+        </ul>
+        <h4>Ashina Outskirts (Endgame)</h4>
+        <ul>
+          <li data-id="checklist_1_38">Dropped from Shigekichi of the Red Guard upon defeat, he is located in the courtyard past the stairway gate in Outskirts Wall - Stairway</li>
+        </ul>
+        <h4>Ashina Castle (Endgame)</h4>
+        <ul>
+          <li data-id="checklist_1_39">Dropped from Seven Ashina Spears - Shume Masaji Oniwa upon defeat in the Ashina Resevoir</li>
+          <li data-id="checklist_1_40">Dropped by the Red-Eyed Ashina Elite - Ujinari Mizou in the hidden Dojo below Isshin Ashina's Room. This is the same room that contained 3 Nightjar Shinobi prior to defeating Genichiro Ashina and contained 1 Nightjar Shinobi and 1 Lone Swordsman Shinobi after Ashina Castle has been overrun by Shinobi</li>
+        </ul>
+
+        <h3 id="Gourd_Seeds">Ultimate Healing Gourd (Acquire all <a href="https://sekiroshadowsdietwice.wiki.fextralife.com/Gourd+Seed">Gourd Seeds</a>) <span id="checklist_totals_2"></span></h3>
+        <ul>
+          <li data-id="checklist_2_1"><a href=""></a>Ashina Outskirts - Drop from General Naomori Kawarada, immediately past the "Outskirts Wall - Gate Path" Sculptor's Idol</li>
+          <li data-id="checklist_2_2"><a href=""></a>Ashina Outskirts - In the building right after the Chained Ogre, just past the "Outskirts Wall - Stairway" Sculptor's Idol</li>
+          <li data-id="checklist_2_3"><a href=""></a>Ashina Outskirts - Bought from the Battlefield Memorial Mob Vendor for 1,000 Sen, located up the steps and to the right from where you fight Gyoubu Oniwa</li>
+          <li data-id="checklist_2_4"><a href=""></a>Ashina Castle - Just before the "Upper Tower - Antechamber" Sculptor's Idol in a chest. (Hard to miss)</li>
+          <li data-id="checklist_2_5"><a href=""></a>Dilapidated Temple - One can be bought from Fujioka the Info Broker for 2,000 Sen, once he arrives</li>
+          <li data-id="checklist_2_6"><a href=""></a>Senpou Temple, Mt. Kongo - In front of the first immortal monk you encounter in the Senpou Temple, in the first building that's filled with crickets</li>
+          <li data-id="checklist_2_7"><a href=""></a>Sunken Valley - From the "Under-shrine Valley" Idol, progress forward and after encountering the fourth rifleman on the path, climb up the wall on the left to find the gourd seed in a small hut</li>
+          <li data-id="checklist_2_8"><a href=""></a>Ashina Depths - In the center of Mibu Village, by the orange glowing tree. It is guarded by multiple enemies</li>
+          <li data-id="checklist_2_9"><a href=""></a>Fountainhead Palace - In a chest in the last room of the palace by the "Palace Grounds" Sculptor's Idol. (Hard to miss)</li>
+        </ul>
+      </div>
+
+      <div class="tab-pane" id="tabInformation">
+        <h2>Information</h2>
+        <ul>
+          <li><a href="#Coldblood_Types">Coldblood Types</a></li>
+        </ul>
+        <hr />
+
+        <h3 id="Coldblood_Types">Coldblood Types</h3>
+        <table class="table-striped">
+          <thead>
+            <tr><th>Name</th><th>Souls</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="http://bloodborne.wiki.fextralife.com/Coldblood+Dew">Coldblood Dew</a></td>
+              <td>(1) 350 / (2) 500 / (3) 1000</td></tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Thick+Coldblood">Thick Coldblood</a></td>
+                <td>(4) 1200 / (5) 1500 / (6) 1800</td>
+              </tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Frenzied+Coldblood">Frenzied Coldblood</a></td>
+                <td>(7) 2000 / (8) 3000 / (9) 5000</td>
+              </tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Kin+Coldblood">Kin Coldblood</a></td>
+                <td>(10) 8000 / (11) 10,000 / (12) 20,000</td>
+              </tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Great+One+Coldblood">Great One Coldblood</a></td>
+                <td>40,000</td>
+              </tr><tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Old+Great+One+Coldblood">Old Great One Coldblood</a></td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Revered+Great+One+Coldblood">Revered Great One Coldblood</a></td>
+                <td>100,000 - Not found in game yet</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-pane" id="tabHelp">
+          <h2>Help</h2>
+
+          <h3>Is this a guide?</h3>
+          <p>Nope, not really. This is a set of checklists and information that you can use while playing Dark Souls to make sure you don't miss an item, action, conversation or boss. If you need playthroughs then you can click on the links scattered throughout the page to find them in the wiki.</p>
+
+          <h3>Do I need to follow the playthrough in this exact order?</h3>
+          <p>Bloodborne is not a liner game and has multiple ways of progressing. This is generally the way I like to play through the game, so feel free to follow it if you like or mix it up. You can always jump back and forth and check things off in a different order.</p>
+
+          <h3>Can I use this for multiple characters?</h3>
+          <p>Yup, use the profile selector and buttons at the top right of the page to setup multiple characters.</p>
+
+          <h3>How do I help with feedback, corrections, suggestions or additions?</h3>
+          <p>You can post in <a href="https://www.reddit.com/r/bloodborne/comments/3sfmxs/bloodborne_progress_guide/">this Reddit thread</a> or if you know your way about Git/GitHub then fork <a href="https://github.com/ZKjellberg/bloodborne-cheat-sheet/">my repo</a> and submit a pull request.</p>
+
+          <h3>How does the checklist status get saved?</h3>
+          <p>It gets saved to the local storage in your browser and not to any database or API. So if you are
+            clearing your browser cache make sure not to delete the site data or your checklists will
+            get reset.</p>
+        </div>
+      </div>
+    </div>
+    <div id="profileModal" class="modal hide fade">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 id="profileModalTitle">Profile</h3>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="profileModalName">Name</label>
+            <div class="controls">
+              <input type="text" id="profileModalName" placeholder="Enter profile name">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#" id="profileModalClose" class="btn">Close</a>
+        <a href="#" id="profileModalAdd" class="btn btn-primary">Add</a>
+        <a href="#" id="profileModalUpdate" class="btn btn-primary">Update</a>
+        <a href="#" id="profileModalDelete" class="btn btn-danger">Delete</a>
+      </div>
+    </div>
+  </body>
+</html>
