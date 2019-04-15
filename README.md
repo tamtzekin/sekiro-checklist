@@ -1,6 +1,6 @@
 ## Sekiro 100% Checklist
 
-Use the checklist [here]: (https://tamtzekin.github.io/sekiro-checklist/)
+Use the checklist [here](https://tamtzekin.github.io/sekiro-checklist/)
 
 A checklist for Sekiro that tracks game progress for achieving 100% Achievements/Trophies, including all Prayer Bead locations, Gourd Seeds, Bosses and Game Progress Walkthrough.
 
